@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18 # O la versión de Node.js que prefieras
+    commands:
+      - echo "Instalando dependencias..."
+      - npm install
+
+  build:
+    commands:
+      - echo "Validando tamaño del archivo..."
+      - npm run validate-file-size
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
+

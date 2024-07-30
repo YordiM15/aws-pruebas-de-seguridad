@@ -1,0 +1,13 @@
+{
+  "name": "pruebas-seguridad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "validateFileSize.js",
+  "scripts": {
+    "validate-file-size": "node validateFileSize.js"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
